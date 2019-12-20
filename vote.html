@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vote</title>
+	<script type="text/javascript">
+		var voteA = 0;
+var voteB = 0;
+function voteCandidateA(){
+voteA = voteA +1;
+document.getElementById('vote').innerHTML = voteA;
+}
+
+function voteCandidateB(){
+voteB = voteB +1;
+document.getElementById('vote1').innerHTML = voteB;
+}
+	</script>
+	<style type="text/css">
+#main {
+    background-color:black ;
+}
+#main h1{
+    color: #fff;
+    text-align: center;
+    font-size:40px;
+    padding-right: 80px;
+}
+#main h2{
+
+color: #fff;
+text-align: center;
+padding-right: 80px;
+font-size: 40px;
+
+
+}
+
+  #a{
+margin-left: 40px;
+ }
+
+ #b{
+margin-left: 160px;
+}
+#vote{
+	margin-left: 250px;
+	font-size: 20px;
+}
+#vote1{
+margin-left: 700px;
+font-size: 20px;
+}
+
+
+		
+
+	</style>
+</head>
+<body id="main">
+	<h1>voting</h1>
+	<div id="main1">
+		<table>
+<img id="a" src="C:\Users\desk\Desktop\vote\vote1.png" width="500px" height="500px;">	
+<img id="b" src="C:\Users\desk\Desktop\vote\vote.jpg" width="600px" height="500px">	
+<h2>vote count</h2>
+<button id="vote" onclick="voteCandidateA();">Vote1</button>
+<button id="vote1" onclick="voteCandidateB();">Vote2</button>
+
+
+</table>
+
+
+
+
+
+	</div>
+
+</body>
+</html>
